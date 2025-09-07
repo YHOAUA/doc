@@ -86,7 +86,7 @@ const config = {
             position: 'left',
             label: '备忘录',
           },
-          {to: '/blog', label: '博客', position: 'left'},
+          {to: 'https://yhoaua.github.io', label: '博客', position: 'left'},
           {
             href: 'https://github.com/YHOAUA/doc',
             label: 'GitHub',
@@ -96,7 +96,7 @@ const config = {
       },
       footer: {
         
-        copyright: `Copyright © 2024, Built with Docusaurus.`,
+        copyright: `Copyright © 2025, Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
