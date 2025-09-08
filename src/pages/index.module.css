@@ -1,25 +1,105 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+/* src/pages/index.module.css */
 
 .heroBanner {
-  padding: 6rem;
+  padding: 6rem 0; /* 增加上下内边距，根据图片调整，使内容垂直居中感更强 */
   text-align: center;
-  position: relative;
-  color: #0066CC;
-  overflow: hidden;
-  background: url(/static/img/ap.jpg);
+  background-color: var(--docusaurus-color-white, #ffffff); /* 确保背景是纯白色 */
+  color: var(--docusaurus-text-color); /* 默认文本颜色，适配暗黑模式 */
+  min-height: calc(100vh - var(--ifm-navbar-height)); /* 确保至少占据视口高度减去导航栏高度 */
+  display: flex; /* 使用 flexbox 帮助内容垂直居中 */
+  align-items: center; /* 垂直居中对齐 */
+  justify-content: center; /* 水平居中对齐 */
+  flex-direction: column; /* 内容按列排列 */
+}
+/* 如果你的主题默认 배경 已经是浅色，可以不需要显式设置 background-color */
+
+.container {
+  max-width: 800px; /* 限制内容最大宽度，使内容更集中 */
+  margin: 0 auto;
+  padding: 0 1rem; /* 增加左右内边距，防止内容太贴边 */
+  flex-grow: 1; /* 允许容器在 flex 布局中占据可用空间 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 让内部内容在容器中垂直居中 */
+  align-items: center; /* 让内部内容在容器中水平居中 */
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.avatar {
+  border-radius: 50%; /* 圆形头像 */
+  width: 150px; /* 头像大小 */
+  height: 150px;
+  object-fit: cover; /* 确保图片完整填充 */
+  margin-bottom: 1.5rem; /* 头像下方间距 */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* 增加一点点阴影增加层次感 */
+}
+
+.heroTitle {
+  font-size: 2.8rem; /* 姓名大小 */
+  font-weight: 700; /* 加粗 */
+  margin-bottom: 0.5rem;
+  color: #24292e; /* 保持深色 */
+}
+
+.heroSubtitle {
+  font-size: 1.2rem; /* 标语大小 */
+  font-weight: 400; /* 普通粗细 */
+  margin-bottom: 2.5rem; /* 标语下方间距 */
+  color: #586069; /* 稍浅一点的颜色 */
 }
 
 .buttons {
+  margin-top: 1rem;
   display: flex;
-  align-items: center;
   justify-content: center;
+}
+
+.blogButton {
+  background-color: #f6f8fa; /* 浅灰色背景 */
+  color: #24292e; /* 深色文字 */
+  border: 1px solid rgba(27, 31, 35, 0.15); /* 浅边框 */
+  padding: 0.7rem 1.5rem; /* 按钮内边距 */
+  font-size: 1rem; /* 按钮字体大小 */
+  font-weight: 500;
+  border-radius: 6px; /* 较小的圆角 */
+  transition: all 0.2s ease-in-out;
+  display: flex; /* 让箭头和文字对齐 */
+  align-items: center;
+  gap: 0.5rem; /* 箭头和文字间距 */
+}
+
+.blogButton:hover {
+  background-color: #e6e8eb; /* 悬停时背景更深一点 */
+  text-decoration: none; /* 移除下划线 */
+  transform: translateY(-2px); /* 悬停时轻微上浮 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 悬停时阴影 */
+}
+.typingEffect {
+  display: inline-block; /* 允许光标与文本在同一行 */
+  white-space: nowrap; /* 防止文本换行，确保打字机效果 */
+  overflow: hidden; /* 隐藏超出容器的文本 */
+  /* 其他 heroSubtitle 样式保持不变 */
+}
+/* 打字机光标样式 */
+.typedCursor {
+  display: inline-block;
+  width: 2px; /* 光标宽度 */
+  height: 1.2em; /* 光标高度，与文本行高匹配 */
+  margin-left: 5px; /* 光标与文字间的间距 */
+  background-color: var(--ifm-font-color-base); /* 光标颜色，随主题变化 */
+  animation: blink 0.7s infinite; /* 闪烁动画 */
+  vertical-align: middle; /* 垂直居中对齐 */
+}
+/* 光标闪烁动画 */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/* ... (如果需要，还可以将 .heroSubtitle 的原有样式移入 .typingEffect) ... */
+/* 确保 .heroSubtitle 的基础样式没有被 .typingEffect 覆盖 */
+.heroSubtitle {
+  font-size: 1.2rem; /* 标语大小 */
+  font-weight: 400; /* 普通粗细 */
+  margin-bottom: 2.5rem; /* 标语下方间距 */
+  color: #586069; /* 稍浅一点的颜色 */
 }
