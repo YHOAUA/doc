@@ -12,7 +12,7 @@ export default function Root({children}) {
           type="playlist"
           id="8282573592"
           fixed="true"
-          autoplay="true"
+          autoplay="false"
           loop="all"
           order="random"
           preload="auto"
