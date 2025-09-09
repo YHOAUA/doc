@@ -26,6 +26,24 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  stylesheets: [
+    'https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css',
+  ],
+  scripts: [
+    {
+      src: 'https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js',
+      defer: true,
+      crossorigin: 'anonymous',
+    },
+    {
+      src: 'https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js',
+      defer: true,
+      crossorigin: 'anonymous',
+    },
+  ],
+
+  clientModules: [require.resolve('./src/theme/Root')],
+
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".

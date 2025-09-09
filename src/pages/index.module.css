@@ -68,6 +68,7 @@
 }
 
 .blogButton:hover {
+  color: #0066cc; /* 悬停时文字颜色 */
   background-color: #e6e8eb; /* 悬停时背景更深一点 */
   text-decoration: none; /* 移除下划线 */
   transform: translateY(-2px); /* 悬停时轻微上浮 */
