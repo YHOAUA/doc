@@ -10,7 +10,7 @@ export default function Root({children}) {
         <meting-js
           server="netease"
           type="playlist"
-          id="8750755270"
+          id="8282573592"
           fixed="true"
           autoplay="false"
           loop="all"
