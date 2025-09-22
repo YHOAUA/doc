@@ -20,6 +20,8 @@
 
 [Windows皮肤 / windots](https://github.com/ashish0kumar/windots)
 
+[WIndows皮肤](https://github.com/eythaann/Seelen-UI)
+
 ### 加密
 [磁盘加密 / Veracrypt](https://www.veracrypt.fr/en/Downloads.html)
 

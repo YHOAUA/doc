@@ -52,6 +52,16 @@ const config = {
     locales: ['zh-Hans'],
   },
 
+  plugins: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ['en', 'zh'], // Assuming you want both English and Chinese search
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -91,6 +101,12 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      // algolia: {
+      //   appId: 'SRMMU9U1B5',
+      //   apiKey: '13048f983927e958bdab4c8faa7ddd5a',
+      //   indexName: 'doc',
+      //   contextualSearch: true,
+      // },
       navbar: {
         title: '',
         logo: {
