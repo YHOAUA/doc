@@ -120,7 +120,6 @@ const config = {
             position: 'left',
             label: '备忘录',
           },
-          {to: '/media', label: '影视', position: 'left'},
           {to: 'https://yhoaua.github.io', label: '博客', position: 'left'},
           {
             href: 'https://github.com/YHOAUA/doc',
