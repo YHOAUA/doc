@@ -107,7 +107,7 @@ function HomepageHeader() {
       <div className="container">
         {/* 头像 */}
         <img
-          src="/img/avatar.png"
+          src="https://avatars.githubusercontent.com/u/67505299"
           alt="YHOAUA's Avatar"
           className={styles.avatar}
         />
