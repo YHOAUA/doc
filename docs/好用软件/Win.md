@@ -18,8 +18,6 @@
 
 [软件使用时长 / Tai](https://github.com/Planshit/Tai)
 
-[Windows皮肤 / windots](https://github.com/ashish0kumar/windots)
-
 [WIndows皮肤](https://github.com/eythaann/Seelen-UI)
 
 ### 加密
