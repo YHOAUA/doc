@@ -121,8 +121,8 @@ const config = {
             label: '备忘录',
           },
           {to: 'https://yhoaua.github.io', label: '博客', position: 'left'},
+          {to: 'https://ymemo.netlify.app', label: '说说', position: 'left'},
           {to: 'https://navsphere-5ao.pages.dev', label: '导航', position: 'left'},
-          {to: 'https://solara-79y.pages.dev/', label: '音乐', position: 'left'},
           {
             href: 'https://github.com/YHOAUA/doc',
             label: 'GitHub',
