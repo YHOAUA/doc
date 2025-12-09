@@ -9,6 +9,7 @@
 - [卸载软件 / Geek Uninstaller](https://geekuninstaller.com/)
 - [软件使用时长 / Tai](https://github.com/Planshit/Tai)
 - [WIndows 皮肤](https://github.com/eythaann/Seelen-UI)
+- [解压缩 / 7 Zip](https://www.7-zip.org/)
 - [磁盘加密 / Veracrypt](https://www.veracrypt.fr/en/Downloads.html)
 - [文件加密 / Gnupg](https://gnupg.org/download/index.html)
 - [白霜拼音](https://github.com/gaboolic/rime-frost)
@@ -36,19 +37,15 @@
 
 
 ## 媒体工具
-
+- [音视频编辑 / FFmpeg](https://www.ffmpeg.org/)
+- [视频封装 / mkvtoolnix](https://mkvtoolnix.download/index.html)
 - [屏幕录像 / OBS](https://obsproject.com/)
-
 - [屏幕截图 / Snipaste](https://www.snipaste.com/download.html)
-
 - [视频播放 / MPV_lazy](https://github.com/hooke007/MPV_lazy)
-
 - [视频编辑 / Premiere Pro](#)
 - [视频编辑 / DaVinci Resolve](#)
 - [字幕编辑 / Aegisub ](https://aegisub.org/)
-
-- [音乐播放 / foobar2000](https://www.cnblogs.com/asionwu/p/17103652.html)
-
+- [音乐播放 / foobar2000](https://github.com/dream7180/foobox-cn)
 - [音乐编辑 / 音乐标签](https://www.cnblogs.com/vinlxc/p/11347744.html)
 - [音频编辑 / Audition](https://www.cnblogs.com/asionwu/p/17103652.html)
 - [编曲 / FL Studio](https://www.cnblogs.com/asionwu/p/17103652.html)

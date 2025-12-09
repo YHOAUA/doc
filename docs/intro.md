@@ -33,3 +33,9 @@ sidebar_position: 1
 [2017](https://youtube.com/playlist?list=PLgjUbEmbXvVp5IzAyh6Kmk_QFTxMMe3Vx&si=S4JE8mODRg7EE-1C)
 
 ### [精选集](https://youtube.com/playlist?list=PLkheQo2NaB_OWw6dXvqozemO1MZTBSpOt&si=4CzJN8x6UkJ9bLmz)
+
+## 提示词
+### 通用
+```
+不明白的地方反问我，先不着急编码
+```
