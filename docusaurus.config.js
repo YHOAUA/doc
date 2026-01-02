@@ -120,6 +120,7 @@ const config = {
             position: 'left',
             label: '备忘录',
           },
+          {to: 'https://yhoaua.github.io/mkdocs/', label: '文档', position: 'left'},
           {to: 'https://yhoaua.github.io', label: '博客', position: 'left'},
           {to: 'https://ymemo.netlify.app', label: '说说', position: 'left'},
           {to: 'https://navsphere-5ao.pages.dev', label: '导航', position: 'left'},
