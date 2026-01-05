@@ -1,27 +1,15 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
-
 import {themes as prismThemes} from 'prism-react-renderer';
-
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '备忘录',
   tagline: '',
   favicon: 'img/favicon.ico',
-  // Set the production url of your site here
   url: 'https://ydoc.netlify.app',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'yhoaua', // Usually your GitHub org/user name.
-  projectName: 'doc', // Usually your repo name.
+  organizationName: 'yhoaua', 
+  projectName: 'doc', 
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -33,20 +21,15 @@ const config = {
     {
       src: 'https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js',
       defer: true,
-      crossorigin: 'anonymous',
     },
     {
       src: 'https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js',
       defer: true,
-      crossorigin: 'anonymous',
     },
   ],
 
   clientModules: [require.resolve('./src/theme/Root')],
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
@@ -57,9 +40,14 @@ const config = {
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: true,
-        language: ['en', 'zh'], // Assuming you want both English and Chinese search
+        language: ['en', 'zh'],
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
       },
     ],
+    // 推荐添加图片缩放插件（需运行 npm install docusaurus-plugin-image-zoom）
+    'docusaurus-plugin-image-zoom', 
   ],
 
   presets: [
@@ -69,22 +57,20 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/YHOAUA/doc/tree/master/',
+          editUrl: 'https://github.com/YHOAUA/doc/tree/master/',
+          // --- 新增：显示最后修改时间和作者 ---
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
         },
         blog: {
           showReadingTime: true,
+          // --- 新增：博客也显示修改时间 ---
+          showLastUpdateTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/YHOAUA/doc/tree/master/',
-          // Useful options to enforce blogging best practices
+          editUrl: 'https://github.com/YHOAUA/doc/tree/master/',
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
@@ -99,14 +85,16 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
-      // algolia: {
-      //   appId: 'SRMMU9U1B5',
-      //   apiKey: '13048f983927e958bdab4c8faa7ddd5a',
-      //   indexName: 'doc',
-      //   contextualSearch: true,
-      // },
+      // --- 新增：图片缩放配置 ---
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)'
+        },
+        config: {}
+      },
       navbar: {
         title: '',
         logo: {
@@ -132,8 +120,8 @@ const config = {
         ],
       },
       footer: {
-        
-        copyright: `Copyright © 2025, Built with Docusaurus.`,
+        // 更新 Copyright 时间
+        copyright: `Copyright © ${new Date().getFullYear()} yhoaua. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
