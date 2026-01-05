@@ -16,7 +16,7 @@
   "dependencies": {
     "@docusaurus/core": "3.6.3",
     "@docusaurus/preset-classic": "3.6.3",
-    "@easyops-cn/docusaurus-search-local": "^0.52.1",
+    "@easyops-cn/docusaurus-search-local": "^0.52.2",
     "@mdx-js/react": "^3.0.0",
     "aplayer": "^1.10.1",
     "clsx": "^2.0.0",

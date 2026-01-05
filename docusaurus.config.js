@@ -1,11 +1,14 @@
 // @ts-check
+// `@type` JSDoc annotations allow editor autocompletion and type checking
 import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '备忘录',
-  tagline: '',
+  tagline: '每个平凡的日常或许就是连续发生的奇迹',
   favicon: 'img/favicon.ico',
+
+  // 站点元数据
   url: 'https://ydoc.netlify.app',
   baseUrl: '/',
   organizationName: 'yhoaua', 
@@ -14,6 +17,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
+  // 外部资源
   stylesheets: [
     'https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css',
   ],
@@ -28,25 +32,27 @@ const config = {
     },
   ],
 
+  // 客户端模块
   clientModules: [require.resolve('./src/theme/Root')],
 
+  // 语言配置
   i18n: {
     defaultLocale: 'zh-Hans',
     locales: ['zh-Hans'],
   },
 
   plugins: [
+    // 本地搜索优化：增加路径显示和关键词高亮
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         hashed: true,
         language: ['en', 'zh'],
-        indexDocs: true,
-        indexBlog: true,
-        indexPages: true,
+        highlightSearchTermsOnTargetPage: true,
+        explicitSearchResultPath: true,
       },
     ],
-    // 推荐添加图片缩放插件（需运行 npm install docusaurus-plugin-image-zoom）
+    // 图片缩放插件 (请确保已运行 npm install docusaurus-plugin-image-zoom)
     'docusaurus-plugin-image-zoom', 
   ],
 
@@ -58,13 +64,12 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/YHOAUA/doc/tree/master/',
-          // --- 新增：显示最后修改时间和作者 ---
+          // 开启最后更新时间和作者
           showLastUpdateTime: true,
           showLastUpdateAuthor: true,
         },
         blog: {
           showReadingTime: true,
-          // --- 新增：博客也显示修改时间 ---
           showLastUpdateTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -85,16 +90,33 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // 社交分享图片
       image: 'img/docusaurus-social-card.jpg',
-      // --- 新增：图片缩放配置 ---
+      
+      // 侧边栏交互优化
+      docs: {
+        sidebar: {
+          hideable: true,            // 支持手动收起侧边栏
+          autoCollapseCategories: true, // 展开一个时自动收起其他，保持整洁
+        },
+      },
+
+      // 图片缩放配置
       zoom: {
         selector: '.markdown :not(em) > img',
         background: {
-          light: 'rgb(255, 255, 255)',
-          dark: 'rgb(50, 50, 50)'
+          light: 'rgba(255, 255, 255, 0.9)',
+          dark: 'rgba(50, 50, 50, 0.9)'
         },
         config: {}
       },
+
+      // 目录层级优化：支持到 4 级标题
+      tableOfContents: {
+        minHeadingLevel: 2,
+        maxHeadingLevel: 4,
+      },
+      backToTopButton: true,
       navbar: {
         title: '',
         logo: {
@@ -120,12 +142,20 @@ const config = {
         ],
       },
       footer: {
-        // 更新 Copyright 时间
+        style: 'dark',
         copyright: `Copyright © ${new Date().getFullYear()} yhoaua. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
+        // 代码块魔术注释：支持 highlight-next-line 等
+        magicComments: [
+          {
+            className: 'theme-code-block-highlighted-line',
+            line: 'highlight-next-line',
+            block: {start: 'highlight-start', end: 'highlight-end'},
+          },
+        ],
       },
     }),
 };
