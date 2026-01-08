@@ -3,6 +3,12 @@ sidebar_position: 1
 ---
 
 # 收集箱
+这里搜集一些有意思的东西
+
+### 搜寻地外文明计划（SETI）
+
+### 旅行者金属唱片
+
 
 ## 视频
 - [人类简史内地删减对比](https://youtu.be/inGDsbeYAqA?si=FzhPuOHLfNzPUsK0)
