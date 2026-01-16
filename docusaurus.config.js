@@ -146,22 +146,6 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} yhoaua. Built with Docusaurus.`,
       },
 
-      // Giscus 评论系统配置
-      giscus: {
-        // 从 https://giscus.app 获取你的配置
-        repo: 'YHOAUA/doc',
-        repoId: 'R_kgDOG_XXXX', // 替换为你的 repoId
-        category: 'General',
-        categoryId: 'DIC_kwDOG_XXXX', // 替换为你的 categoryId
-        mapping: 'pathname',
-        strict: '0',
-        reactionsEnabled: '1',
-        emitMetadata: '0',
-        inputPosition: 'top',
-        theme: 'light',
-        darkTheme: 'dark',
-        lang: 'zh-CN',
-      },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
