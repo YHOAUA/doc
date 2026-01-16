@@ -8,10 +8,10 @@ export default function FooterWrapper(props) {
       <Footer {...props} />
       <div style={{ marginTop: '3rem' }}>
         <Giscus
-          id="comments"
+          id="general"
           repo="YHOAUA/doc"
           repoId="R_kgDONblbhw"
-          category="Comments"
+          category="general"
           categoryId="DIC_kwDONblbh84CxW4D"
           mapping="pathname"
           strict="0"
