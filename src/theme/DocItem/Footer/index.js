@@ -6,21 +6,24 @@ export default function FooterWrapper(props) {
   return (
     <>
       <Footer {...props} />
-      <Giscus
-        id="comments"
-        repo="YHOAUA/doc"
-        repoId="R_kgDONblbhw"
-        category="Comments"
-        categoryId="DIC_kwDONblbh84CxW4D"
-        mapping="pathname"
-        strict="0"
-        reactionsEnabled="1"
-        emitMetadata="0"
-        inputPosition="top"
-        theme="light"
-        darkTheme="dark"
-        lang="zh-CN"
-      />
+      <div style={{ marginTop: '3rem' }}>
+        <Giscus
+          id="comments"
+          repo="YHOAUA/doc"
+          repoId="R_kgDONblbhw"
+          category="Comments"
+          categoryId="DIC_kwDONblbh84CxW4D"
+          mapping="pathname"
+          strict="0"
+          reactionsEnabled="1"
+          emitMetadata="0"
+          inputPosition="top"
+          theme="light"
+          darkTheme="dark"
+          lang="zh-CN"
+          loading="lazy"
+        />
+      </div>
     </>
   );
 }

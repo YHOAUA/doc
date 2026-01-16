@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giscus 测试</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 800px; margin: 50px auto; padding: 20px; }
+    .status { padding: 10px; margin: 20px 0; border-radius: 5px; }
+    .success { background: #d4edda; color: #155724; }
+    .error { background: #f8d7da; color: #721c24; }
+  </style>
+</head>
+<body>
+  <h1>Giscus 评论系统测试</h1>
+  <div id="status" class="status">加载中...</div>
+
+  <script>
+    const status = document.getElementById('status');
+    
+    // 尝试加载 giscus
+    const script = document.createElement('script');
+    script.src = 'https://giscus.app/client.js';
+    script.async = true;
+    script.crossOrigin = 'anonymous';
+    
+    script.onload = () => {
+      status.textContent = '✅ giscus.js 加载成功！查看下方是否有评论框';
+      status.className = 'status success';
+    };
+    
+    script.onerror = () => {
+      status.textContent = '❌ 无法加载 giscus.js，请检查网络连接';
+      status.className = 'status error';
+    };
+    
+    document.body.appendChild(script);
+  </script>
+
+  <!-- Giscus 组件 -->
+  <div class="giscus"></div>
+  <script src="https://giscus.app/client.js"
+    data-repo="YHOAUA/doc"
+    data-repo-id="R_kgDONblbhw"
+    data-category="Comments"
+    data-category-id="DIC_kwDONblbh84CxW4D"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-dark-theme="dark"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    async>
+  </script>
+</body>
+</html>
