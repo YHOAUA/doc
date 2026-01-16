@@ -22,3 +22,81 @@ html[data-theme='dark'] {
   z-index: 9999; /* Ensure APlayer is on top */
 }
 
+/* 古诗词样式 - 古文网名句风格 */
+.poem-item {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #e8e8e8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.poem-item:last-child {
+  border-bottom: none;
+}
+
+.poem-quote {
+  font-family: "KaiTi", "楷体", "STKaiti", serif;
+  font-size: 1.25em;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.poem-quote a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.poem-quote a:hover {
+  color: #8b4513;
+}
+
+.poem-source {
+  font-size: 0.85em;
+  color: #999;
+}
+
+html[data-theme='dark'] .poem-item {
+  border-bottom-color: #3a3a3a;
+}
+
+html[data-theme='dark'] .poem-quote {
+  color: #e0e0e0;
+}
+
+html[data-theme='dark'] .poem-quote a {
+  color: #e0e0e0;
+}
+
+html[data-theme='dark'] .poem-quote a:hover {
+  color: #c9a96e;
+}
+
+html[data-theme='dark'] .poem-source {
+  color: #808080;
+}
+
+html[data-theme='dark'] .poem-item {
+  background: linear-gradient(135deg, #2a2520 0%, #24201d 100%);
+  border-color: #4a4238;
+  box-shadow: 0 2px 12px rgba(201, 169, 110, 0.08);
+}
+
+html[data-theme='dark'] .poem-item:hover {
+  box-shadow: 0 4px 20px rgba(201, 169, 110, 0.15);
+}
+
+html[data-theme='dark'] .poem-title {
+  color: #c9a96e;
+}
+
+html[data-theme='dark'] .poem-author {
+  color: #d4b896;
+  border-bottom-color: #6b5d4e;
+}
+
+html[data-theme='dark'] .poem-item .poem-content {
+  color: #e8ddd0;
+}
+

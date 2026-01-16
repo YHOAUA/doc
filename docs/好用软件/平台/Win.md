@@ -14,7 +14,7 @@
 - [文件加密 / Gnupg](https://gnupg.org/download/index.html)
 - [白霜拼音](https://github.com/gaboolic/rime-frost)
 - [薄荷输入法](https://github.com/Mintimate/oh-my-rime)
-
+- [文件管理器](https://www.onecommander.com/)
 
 
 ## 应用软件

@@ -5,6 +5,15 @@ sidebar_position: 1
 # 收集箱
 这里搜集一些有意思的东西
 
+## 写作
+- ## [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
+- ## [中文技术文档写作风格指南](https://zh-style-guide.readthedocs.io/zh-cn/latest/%E5%85%B3%E4%BA%8E%E6%9C%AC%E6%8C%87%E5%8D%97.html)
+
+## 学习
+- ## [如何系统性学习](https://program-think.blogspot.com/2019/10/Systematic-Learning.html)
+- ## [提问的智慧](https://github.com/tvvocold/How-To-Ask-Questions-The-Smart-Way)
+- ## [英语是活的——答网友英语学习提问](https://yufan.me/posts/english-in-use)
+
 ### 搜寻地外文明计划（SETI）
 
 ### 旅行者金属唱片
