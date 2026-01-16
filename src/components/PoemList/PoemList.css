@@ -1,0 +1,56 @@
+.poem-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.poem-item {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.poem-item:last-child {
+  border-bottom: none;
+}
+
+.poem-quote {
+  font-family: "KaiTi", "楷体", "STKaiti", serif;
+  font-size: 1.25em;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.poem-quote a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.poem-quote a:hover {
+  color: #a01217;
+}
+
+.poem-source {
+  font-size: 0.85em;
+  color: #999;
+}
+
+html[data-theme='dark'] .poem-item {
+  border-bottom-color: #3a3a3a;
+}
+
+html[data-theme='dark'] .poem-quote {
+  color: #e0e0e0;
+}
+
+html[data-theme='dark'] .poem-quote a {
+  color: #e0e0e0;
+}
+
+html[data-theme='dark'] .poem-quote a:hover {
+  color: #c9a96e;
+}
+
+html[data-theme='dark'] .poem-source {
+  color: #808080;
+}
