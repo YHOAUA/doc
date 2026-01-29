@@ -1,4 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap');
+
 /* src/css/custom.css */
+
+/* Shelf Section Styles */
+.shelf-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.shelf-header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.shelf-header-row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.shelf-tag-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 4px 12px;
+  transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: 'Figtree', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
+
+.shelf-tag-button.active {
+  background-color: rgba(107, 114, 128, 0.1);
+  color: rgb(107, 114, 128);
+}
+
+.shelf-tag-button.inactive {
+  background-color: transparent;
+  color: rgb(156, 163, 175);
+}
+
+.shelf-tag-button.inactive:hover {
+  background-color: rgba(107, 114, 128, 0.05);
+}
+
+.shelf-dropdown-button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 9999px;
+  padding: 4px 12px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: 'Figtree', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  background-color: rgba(107, 114, 128, 0.1);
+  color: rgb(107, 114, 128);
+}
+
+.shelf-dropdown-button svg {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.2s;
+}
+
+.shelf-dropdown-button.open svg {
+  transform: rotate(180deg);
+}
+
+.shelf-filters-desktop {
+  display: none;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+  overflow: hidden;
+  flex: 1;
+}
+
+@media (min-width: 1024px) {
+  .shelf-filters-desktop {
+    display: flex;
+  }
+}
+
+.shelf-spacer {
+  flex: 1;
+}
+
+@media (min-width: 1024px) {
+  .shelf-spacer {
+    display: none;
+  }
+}
+
+.shelf-external-link {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  background: linear-gradient(to right, transparent, white);
+  white-space: nowrap;
+}
+
+.shelf-external-link a {
+  background: white;
+  color: rgb(156, 163, 175);
+  font-family: 'Figtree', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  transition: color 0.2s;
+}
+
+.shelf-external-link a:hover {
+  color: rgb(59, 130, 246);
+}
+
+.shelf-divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(229, 231, 235);
+}
+
+.shelf-grid {
+  display: grid;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.shelf-grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .shelf-grid-5 {
+    grid-template-columns: repeat(10, 1fr);
+    gap: 12px;
+  }
+}
+
+.shelf-grid-featured {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .shelf-grid-featured {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding-left: 118px;
+    padding-right: 118px;
+  }
+}
+
+.shelf-item {
+  animation: shelfItemFadeUp 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .shelf-grid-featured .shelf-item {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+.shelf-empty {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  padding-top: 8px;
+  animation: shelfItemFadeUp 0.5s ease-out forwards;
+  opacity: 0;
+}
+
+.shelf-empty p {
+  color: rgb(156, 163, 175);
+  font-size: 14px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.shelf-dropdown-portal {
+  position: fixed;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgb(243, 244, 246);
+  z-index: 9999;
+  min-width: 140px;
+  will-change: transform;
+}
+
+.shelf-dropdown-content {
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+}
+
+.shelf-dropdown-item {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  padding: 6px 12px;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  text-align: left;
+}
+
+.shelf-dropdown-item:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.shelf-dropdown-item.active {
+  background-color: rgb(243, 244, 246);
+}
+
+.shelf-dropdown-item span {
+  font-family: 'Figtree', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+  color: rgb(107, 114, 128);
+}
+
+.shelf-dropdown-item.active span {
+  color: rgb(75, 85, 99);
+}
+
+.shelf-dropdown-item span.count {
+  color: rgb(156, 163, 175);
+}
+
+/* Media Card Styles */
+.shelf-media-card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: rgb(243, 244, 246);
+  transition: transform 0.3s;
+}
+
+.shelf-media-card:hover {
+  transform: scale(1.05);
+}
+
+.shelf-media-card.aspect-portrait {
+  aspect-ratio: 2 / 3;
+}
+
+.shelf-media-card.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
+.shelf-media-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.shelf-media-card-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 50%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.shelf-media-card:hover .shelf-media-card-overlay {
+  opacity: 1;
+}
+
+.shelf-media-card-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+}
+
+.shelf-media-card-title {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.shelf-media-card-author {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.shelf-media-card-year {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+
+@keyframes shelfItemFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInFromTop {
+  from { transform: translateY(-4px); }
+  to { transform: translateY(0); }
+}
+
+.animate-in {
+  animation: fadeIn 0.2s ease-out, slideInFromTop 0.2s ease-out;
+}
 
 :root {
   --ifm-color-primary: #0066cc;
@@ -98,5 +442,67 @@ html[data-theme='dark'] .poem-author {
 
 html[data-theme='dark'] .poem-item .poem-content {
   color: #e8ddd0;
+}
+
+/* 收藏组件动画样式 */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(156, 163, 175, 0.1) 0%,
+    rgba(156, 163, 175, 0.3) 50%,
+    rgba(156, 163, 175, 0.1) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shelf-item-fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-shelf-item-fade-up {
+  animation: shelf-item-fade-up 0.4s ease-out forwards;
+  opacity: 0;
+}
+
+/* 引用样式 */
+.quote-underline-wrapper {
+  position: relative;
+  display: inline;
+}
+
+.quote-animated-underline {
+  position: relative;
+}
+
+.quote-animated-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 1s ease-out;
+}
+
+.quote-animated-underline.revealed::after {
+  width: 100%;
 }
 
