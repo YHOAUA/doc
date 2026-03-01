@@ -8,14 +8,13 @@
 - [多标签文件管理器 / Clover 3](http://cn.ejie.me/)
 - [卸载软件 / Geek Uninstaller](https://geekuninstaller.com/)
 - [软件使用时长 / Tai](https://github.com/Planshit/Tai)
-- [WIndows 皮肤](https://github.com/eythaann/Seelen-UI)
 - [解压缩 / 7 Zip](https://www.7-zip.org/)
 - [磁盘加密 / Veracrypt](https://www.veracrypt.fr/en/Downloads.html)
 - [文件加密 / Gnupg](https://gnupg.org/download/index.html)
 - [白霜拼音](https://github.com/gaboolic/rime-frost)
 - [薄荷输入法](https://github.com/Mintimate/oh-my-rime)
 - [文件管理器](https://www.onecommander.com/)
-
+- WIndows 皮肤 [Seelen-UI](https://github.com/eythaann/Seelen-UI) [windots](https://github.com/ashish0kumar/windots)
 
 ## 应用软件
 
