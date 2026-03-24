@@ -128,7 +128,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '备忘录',
+            label: '游戏开发笔记',
           },
           {to: 'https://yhoaua.github.io', label: '博客', position: 'left'},
           {to: 'https://yhnav.vercel.app', label: '导航', position: 'left'},
