@@ -8,7 +8,6 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
   const [fullHitokoto, setFullHitokoto] = useState('Never Knows Best');
   const [displayHitokoto, setDisplayHitokoto] = useState('');
   const [isLoading, setIsLoading] = useState(true);
@@ -133,11 +132,11 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Hi from YHOAUA`}
-      description="YHOAUA">
+      description="YHOAUA"
+      noFooter>
       <HomepageHeader />
       <main>
       </main>
