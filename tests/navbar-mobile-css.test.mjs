@@ -34,3 +34,29 @@ test('navbar host element does not create a containing block for mobile sidebar'
     'default navbar should not apply backdrop-filter directly',
   );
 });
+
+test('custom mobile sidebar layers stay above navbar inner content', () => {
+  const docsNavbarInnerRule = getRuleBody(':is(html.docs-wrapper, html.blog-wrapper) .navbar__inner');
+  const defaultNavbarInnerRule = getRuleBody('html:not(.docs-wrapper):not(.blog-wrapper) .navbar__inner');
+
+  assert.match(
+    css,
+    /@media\s*\(max-width:\s*996px\)\s*\{[\s\S]*?\.navbar-sidebar__backdrop\s*\{[\s\S]*?z-index\s*:\s*211\s*;/,
+    'mobile sidebar backdrop should sit below the drawer and above page chrome',
+  );
+  assert.match(
+    css,
+    /@media\s*\(max-width:\s*996px\)\s*\{[\s\S]*?\.navbar-sidebar\s*\{[\s\S]*?z-index\s*:\s*212\s*;/,
+    'mobile sidebar should sit above fixed navbar layers',
+  );
+  assert.doesNotMatch(
+    docsNavbarInnerRule,
+    /z-index\s*:/,
+    'docs/blog navbar inner should not out-rank the mobile drawer',
+  );
+  assert.doesNotMatch(
+    defaultNavbarInnerRule,
+    /z-index\s*:/,
+    'default navbar inner should not out-rank the mobile drawer',
+  );
+});
