@@ -64,9 +64,9 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/YHOAUA/doc/tree/master/',
-          // 开启最后更新时间和作者
-          showLastUpdateTime: true,
-          showLastUpdateAuthor: true,
+          // 关闭文档底部最后更新时间与作者信息
+          showLastUpdateTime: false,
+          showLastUpdateAuthor: false,
         },
         blog: {
           showReadingTime: true,
