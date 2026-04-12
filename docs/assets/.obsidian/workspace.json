@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "2096847f085b0110",
+    "id": "fcfeab4d99aed149",
     "type": "split",
     "children": [
       {
-        "id": "7e99c5be21b21cd5",
+        "id": "d5d1b34d3bd62724",
         "type": "tabs",
         "children": [
           {
-            "id": "b402c3d50199bffe",
+            "id": "819c7c6de9fbae3b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "游戏设计.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "游戏设计"
+              "title": "新标签页"
             }
           }
         ]
@@ -27,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "6b2485e7b4614bfd",
+    "id": "f3e2c34b72cd915c",
     "type": "split",
     "children": [
       {
-        "id": "253a6cc06464f270",
+        "id": "767ae990be6e621f",
         "type": "tabs",
         "children": [
           {
-            "id": "28febd9e1347118c",
+            "id": "c6476fff2bb1f40c",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +44,7 @@
             }
           },
           {
-            "id": "dd341eaf14787b28",
+            "id": "a588bdcac0ba1093",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +61,7 @@
             }
           },
           {
-            "id": "a132e094ee8af360",
+            "id": "82b0a0d67384474a",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,23 +74,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "869b0ac26d69ce15",
+    "id": "68e60583ab13e076",
     "type": "split",
     "children": [
       {
-        "id": "f00f0e03b5033888",
+        "id": "188e24049286bc20",
         "type": "tabs",
         "children": [
           {
-            "id": "009682f65b5e78ea",
+            "id": "072dfbb7b2c20e93",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "游戏设计.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "游戏设计 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
-            "id": "76550c4534a4e1ec",
+            "id": "00c9d10430587560",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "intro 的出链列表"
+              "title": "出链"
             }
           },
           {
-            "id": "067f309bc3a07896",
+            "id": "3caf7ddc7221c878",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,74 +131,51 @@
             }
           },
           {
-            "id": "9eae038a9f1ec39c",
+            "id": "b03bb600258e6ea2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "3f6d6cd8021e5d9b",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "intro.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "intro 的大纲"
+              "title": "大纲"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 250.5
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:新建数据库": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
     }
   },
-  "active": "b402c3d50199bffe",
-  "lastOpenFiles": [
-    "数学基础.md",
-    "计算机图形.md",
-    "CS 基础/数据结构与算法.md",
-    "CS 基础/计算机组成原理.md",
-    "CS 基础/计算机网络.md",
-    "CS 基础/操作系统.md",
-    "游戏设计.md",
-    "intro.md",
-    "文学",
-    "搜寻地外文明计划（SETI）.md",
-    "游戏开发/游戏引擎.md",
-    "游戏开发/数学基础.md",
-    "游戏开发/计算机图形学.md",
-    "游戏开发/编程语言.md",
-    "游戏开发/index.md",
-    "游戏开发/基础理论/游戏循环.md",
-    "游戏开发/README.md",
-    "游戏开发/资源库/音效",
-    "游戏开发/资源库/纹理",
-    "游戏开发/资源库/模型",
-    "游戏开发/资源库/工具模板",
-    "游戏开发/资源库/字体",
-    "游戏开发/资源库/参考图",
-    "游戏开发/资源库",
-    "游戏开发/代码示例/进阶",
-    "游戏开发/代码示例/实战",
-    "游戏开发/游戏开发.md",
-    "游戏开发/游戏设计.md",
-    "好用软件/平台/Android.md",
-    "好用软件/平台/iOS.md",
-    "好用软件/平台/Win.md",
-    "好用软件/平台/Mac.md",
-    "游戏开发/游戏.md",
-    "妙笔生花/见识/生活/做饭/链接.md",
-    "妙笔生花/见识/生活/做饭/intro.md",
-    "妙笔生花/见识/生活/做饭/凉拌/柠檬凤爪.md"
-  ]
+  "active": "819c7c6de9fbae3b",
+  "lastOpenFiles": []
 }
