@@ -8,6 +8,7 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
 function HomepageHeader() {
+  const { siteConfig } = useDocusaurusContext();
   const [fullHitokoto, setFullHitokoto] = useState('Never Knows Best');
   const [displayHitokoto, setDisplayHitokoto] = useState('');
   const [isLoading, setIsLoading] = useState(true);
@@ -106,7 +107,7 @@ function HomepageHeader() {
       <div className="container">
         {/* 头像 */}
         <img
-          src="https://avatars.githubusercontent.com/u/67505299"
+          src="/img/avatar.png"
           alt="YHOAUA's Avatar"
           className={styles.avatar}
         />
@@ -132,11 +133,11 @@ function HomepageHeader() {
 }
 
 export default function Home() {
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hi from YHOAUA`}
-      description="YHOAUA"
-      noFooter>
+      title={`Hi from Akara`}
+      description="Akara - Frontend Developer and Blogger">
       <HomepageHeader />
       <main>
       </main>
